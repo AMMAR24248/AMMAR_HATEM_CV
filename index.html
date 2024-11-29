@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammar Hatem Alwan - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ammar Hatem Alwan</h1>
+            <p>Engineering Graduate | IoT, Smart Systems, and Networking</p>
+        </header>
+
+        <section class="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><strong>Phone:</strong> (+964) 07802147854</li>
+                <li><strong>Email:</strong> <a href="mailto:killlalokard@gmail.com">killlalokard@gmail.com</a></li>
+                <li><strong>University Email:</strong> <a href="mailto:en5021018@uomustansiriyah.edu.iq">en5021018@uomustansiriyah.edu.iq</a></li>
+                <li><strong>City:</strong> Baghdad</li>
+            </ul>
+        </section>
+
+        <section class="professional-summary">
+            <h2>Professional Summary</h2>
+            <p>Dynamic and innovative engineering graduate with a strong background in Internet of Things (IoT) technologies, including smart homes, traffic systems, and smart waste management. Adept in networking, software development, and teamwork, with a proven ability to deliver high-quality projects under tight deadlines.</p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor's Degree in Engineering</strong> - Al-Mustansiriya University, Baghdad</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>CCNA 1: Introduction to Networks</li>
+                <li>Microsoft Office Specialist: Excel, Word, PowerPoint</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <h3>Networking</h3>
+            <ul>
+                <li>Cisco Networking Basics, Network Troubleshooting</li>
+            </ul>
+            <h3>IoT Technologies</h3>
+            <ul>
+                <li>Smart Home Systems, Traffic Management Solutions, Smart Waste Management</li>
+            </ul>
+            <h3>Programming</h3>
+            <ul>
+                <li>C++, QR-based Systems Development (pending completion)</li>
+            </ul>
+            <h3>Software Proficiency</h3>
+            <ul>
+                <li>Microsoft Office (Excel, Word, PowerPoint)</li>
+            </ul>
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Communication, Team Collaboration, Fast Learner</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Smart Waste Management System:</strong> Developing an IoT-based solution to optimize waste collection and management processes.</li>
+                <li><strong>Smart Home Automation:</strong> Designed and implemented systems to enhance energy efficiency and automation in homes.</li>
+                <li><strong>Smart Traffic Management System:</strong> Created intelligent systems to improve traffic flow and urban mobility.</li>
+                <li><strong>QR-based Registration System:</strong> A software project focused on event registration using QR technology (pending completion).</li>
+                <li><strong>Restaurant and Court Management Systems:</strong> Delivered functional software solutions to improve organizational efficiency.</li>
+            </ul>
+        </section>
+
+        <section class="training">
+            <h2>Training</h2>
+            <p><strong>Ministry of Communications - General Company for Communications and Informatics</strong></p>
+            <p>Training at the Directorate of the Higher Institute for Communications and Post</p>
+            <ul>
+                <li>Cisco Networking</li>
+                <li>IoT Technologies</li>
+                <li>Smart Systems Development</li>
+                <li>Communication Skills</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Ammar Hatem Alwan. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        window.addEventListener("scroll", function() {
+            const sections = document.querySelectorAll("section, footer");
+            
+            sections.forEach(function(section) {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (sectionTop < windowHeight * 0.8) { // when 80% of the section is visible
+                    section.classList.add("visible");
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
