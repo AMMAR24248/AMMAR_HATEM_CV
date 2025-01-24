@@ -6,15 +6,20 @@
 }
 
 body {
+
+    background-color: #f0f8ff; /* لون أزرق فاتح */
+    color: #333; /* لون النص */
+
+
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f400;
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;  /* منع التمرير الأفقي */
 }
 
-/* Animation for text fade-in */
-@keyframes fadeIn {
+/* Animation for fade-in and slide-up */
+@keyframes fadeInSlideUp {
     0% {
         opacity: 0;
         transform: translateY(30px);
@@ -25,98 +30,131 @@ body {
     }
 }
 
+/* Typing Animation for Header */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+/* Profile Image Styling */
+.profile-container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Profile Image Styling */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 400px; /* تكبير حجم الصورة */
+    height: 400px; /* جعل الصورة مربعة */
+    border-radius: 50%; /* إزالة الزوايا الدائرية */
+    border: 3px solid #007BFF; /* إطار أزرق حول الصورة */
+    object-fit: cover; /* الحفاظ على أبعاد الصورة */
+    float: right; /* وضع الصورة على اليمين */
+    margin-left: 20px; /* إضافة مسافة بين الصورة والنص */
+}
+
+
+.typing-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #007BFF;
+    width: 0;
+    animation: typing 3s steps(30) 1s forwards;
+}
+
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 20px;
-    animation: fadeIn 1.5s ease-out;
+    margin-bottom: 15px;
+    animation: fadeInSlideUp 1.5s ease-out;
 }
 
 header h1 {
     font-size: 2.5rem;
     color: #007BFF;
     margin-bottom: 10px;
-    animation: fadeIn 2s ease-out;
+    animation: fadeInSlideUp 2s ease-out;
 }
 
 header p {
     font-size: 1.2rem;
     color: #555;
-    animation: fadeIn 2s ease-out;
+    animation: fadeInSlideUp 2s ease-out;
 }
 
 /* Section Styles with animation */
 section {
-    margin-bottom: 30px;
-    animation: fadeIn 2s ease-out;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Animation for each section */
+/* Animation for each section when they become visible */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInSlideUp 4s ease-out forwards;
+}
+
+/* Animation for each section header */
 section h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     color: #007BFF;
-    animation: fadeIn 2s ease-out;
+    animation: fadeInSlideUp 4s ease-out;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #007BFF;
+    width: 0;
+    animation: typing 3s steps(30) 4s forwards;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 /* Hover effect on links */
 a {
     color: #007BFF;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease, text-decoration 0.5s ease;
 }
 
 a:hover {
     color: #0056b3;
+    text-decoration: underline;
 }
 
-/* Contact Info section */
+/* Footer */
 footer {
     text-align: center;
-    margin-top: 40px;
-    animation: fadeIn 2s ease-out;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 4s ease-out forwards;
 }
 
 footer p {
     font-size: 1rem;
     color: #555;
-}
-
-/* Scroll Animation Effect */
-section, footer {
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-section.visible, footer.visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.6s ease;
-}
-
-/* Make elements appear on scroll */
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.visible {
-    animation: slideUp 1s ease-out;
 }
 
 /* Smooth Scroll */
