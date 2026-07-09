@@ -437,3 +437,19 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+#typing-text::after {
+  content: "|";
+  margin-left: 5px;
+  color: var(--primary);
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
