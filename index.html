@@ -1,28 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ammar Hatem Alwan | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
 <body>
-  <main class="container">
+
+  <header class="navbar">
+    <div class="logo">Ammar<span>.</span></div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
 
     <section class="hero">
-      <img src="profile.jpg" alt="Ammar Hatem Alwan" class="profile-img">
+      <div class="hero-content">
+        <p class="intro">Hello, I'm</p>
 
-      <h1>Ammar Hatem Alwan</h1>
-      <p>Computer Engineering Graduate | IoT | Smart Systems | Networking</p>
+        <h1>Ammar Hatem Alwan</h1>
+
+        <h2>Computer Engineering Graduate</h2>
+
+        <p class="hero-description">
+          Interested in IoT, Smart Systems, Networking, and Software Development.
+          I build practical engineering solutions that connect hardware, software,
+          and real-world systems.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View Projects</a>
+          <a href="#contact" class="btn secondary-btn">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="profile.jpg" alt="Ammar Hatem Alwan" />
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Contact Information</h2>
-      <p><strong>Phone:</strong> (+964) 07802147854</p>
-      <p><strong>Email:</strong> killlalokard@gmail.com</p>
-      <p><strong>City:</strong> Baghdad</p>
-    </section>
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
 
-    <section class="card">
-      <h2>Professional Summary</h2>
       <p>
-        Computer Engineering graduate interested in IoT, smart systems,
-        networking, and software development, with practical experience in
-        smart waste management, smart home automation, and QR-based systems.
+        I am a Computer Engineering graduate with experience in Internet of Things,
+        smart systems, networking, and software development. My work focuses on
+        building useful technical systems such as smart waste management, smart home
+        automation, smart traffic solutions, and QR-based registration systems.
       </p>
     </section>
 
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">Networking</div>
+        <div class="skill-card">Cisco Basics</div>
+        <div class="skill-card">IoT Systems</div>
+        <div class="skill-card">Smart Systems</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">GitHub</div>
+        <div class="skill-card">Microsoft Office</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <h3>Smart Waste Management System</h3>
+          <p>
+            IoT-based system designed to improve waste collection, monitoring,
+            and smart city management.
+          </p>
+          <span>IoT | GIS | Smart City</span>
+        </article>
+
+        <article class="project-card">
+          <h3>StoreAgent SaaS</h3>
+          <p>
+            A software platform for automating customer messages, extracting orders,
+            and managing store operations.
+          </p>
+          <span>Node.js | TypeScript | PostgreSQL</span>
+        </article>
+
+        <article class="project-card">
+          <h3>Smart Home Automation</h3>
+          <p>
+            System for controlling home devices and improving automation,
+            comfort, and energy efficiency.
+          </p>
+          <span>IoT | Automation</span>
+        </article>
+
+        <article class="project-card">
+          <h3>Smart Traffic Management</h3>
+          <p>
+            Intelligent traffic control concept for improving road movement
+            and reducing congestion.
+          </p>
+          <span>Smart Systems | Sensors</span>
+        </article>
+
+        <article class="project-card">
+          <h3>QR Registration System</h3>
+          <p>
+            Software system for organizing event registration using QR code
+            identification.
+          </p>
+          <span>Software | QR</span>
+        </article>
+
+        <article class="project-card">
+          <h3>Restaurant and Court Systems</h3>
+          <p>
+            Management systems designed to improve organization, workflow,
+            and operational efficiency.
+          </p>
+          <span>Management Systems</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section-title">Education & Certifications</h2>
+
+      <div class="info-box">
+        <h3>Bachelor's Degree in Computer Engineering</h3>
+        <p>Al-Mustansiriya University, Baghdad</p>
+      </div>
+
+      <div class="info-box">
+        <h3>Certifications</h3>
+        <p>CCNA 1: Introduction to Networks</p>
+        <p>CCNA 2: Networks</p>
+        <p>Microsoft Office Specialist: Excel, Word, PowerPoint</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Training</h2>
+
+      <div class="info-box">
+        <h3>Ministry of Communications</h3>
+        <p>General Company for Communications and Informatics</p>
+        <p>Higher Institute for Communications and Post</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title">Contact</h2>
+
+      <p><strong>Phone:</strong> (+964) 07802147854</p>
+      <p><strong>Email:</strong> killlalokard@gmail.com</p>
+      <p><strong>University Email:</strong> en5021018@uomustansiriyah.edu.iq</p>
+      <p><strong>City:</strong> Baghdad, Iraq</p>
+    </section>
+
   </main>
+
+  <footer>
+    <p>© 2026 Ammar Hatem Alwan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+</html>
