@@ -331,3 +331,25 @@ footer {
     font-size: 28px;
   }
 }
+
+.section {
+  opacity: 0;
+  transform: translateY(35px);
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.22), transparent 65%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
