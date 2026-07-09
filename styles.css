@@ -453,3 +453,53 @@ footer {
     opacity: 0;
   }
 }
+
+.project-hero {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 60vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.project-hero h1 {
+  font-size: 60px;
+  color: var(--text-main);
+  margin: 12px 0;
+}
+
+.project-hero h2 {
+  font-size: 30px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.project-hero p {
+  max-width: 760px;
+  color: var(--text-muted);
+  font-size: 18px;
+}
+
+.workflow {
+  display: grid;
+  gap: 14px;
+  max-width: 650px;
+}
+
+.workflow div {
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: var(--text-main);
+  font-weight: 700;
+  text-align: center;
+}
+
+.workflow span {
+  text-align: center;
+  color: var(--primary);
+  font-size: 26px;
+  font-weight: bold;
+}
