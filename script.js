@@ -42,7 +42,7 @@ function startCounters() {
     let current = 0;
     const speed = 40;
 
-    const updateCounter = function () {
+    function updateCounter() {
       if (current < target) {
         current++;
         counter.textContent = current;
@@ -50,7 +50,7 @@ function startCounters() {
       } else {
         counter.textContent = target;
       }
-    };
+    }
 
     updateCounter();
   });
