@@ -503,3 +503,28 @@ footer {
   font-size: 26px;
   font-weight: bold;
 }
+
+<article class="project-card">
+  <div class="project-content">
+    <p class="project-type">Featured Software Project</p>
+
+    <h3>StoreAgent SaaS</h3>
+
+    <p>
+      A smart commerce platform that receives customer messages, extracts order
+      information, generates replies, and stores orders automatically.
+    </p>
+
+    <div class="project-technologies">
+      <span>Node.js</span>
+      <span>TypeScript</span>
+      <span>PostgreSQL</span>
+      <span>Meta API</span>
+    </div>
+
+    <a href="projects/storeagent.html" class="project-link">
+      View Project
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</article>
